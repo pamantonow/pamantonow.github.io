@@ -1,0 +1,19 @@
+.container{
+width: 60%;
+padding: 2%;
+color: white;
+margin-left: auto;
+margin-right: auto;
+}
+
+h1{
+	text-align: center;
+	color: white;
+}
+h3 {
+	text-align: center;
+	color: grey;
+}
+body{
+	background-color: black;
+}

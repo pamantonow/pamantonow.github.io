@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>The four position elements.</h1>
+  <h3>relative, fixed, absolute & static</h3>
+  <h4>Sunday, August 9th</h4>
+  <link rel="stylesheet" type="text/css" href="design.css">
+  <section>
+    <div class ="container">
+    <p>
+     The position property specifies the type of positioning method used for an element(static,relative,absolute or fixed),elements are then positioned using bottom, top, left or right. Altough none of this were work until you set the position first , they also work differently depending on the position value.</p>
+
+     <pre>
+     Example{
+     position: fixed;
+     position: absolute;
+     position: static;
+     position: relative;
+   }
+ </pre>
+
+    
+    <p>
+     One of them is the position Static and this are position static by default, this is not affected by the top, right, left and bottom properties.   
+     An element with position: Static is not position in any special way, is always position according to the normal flow of the page.
+    <p>
+      The posistion relative, is positioned relative to its normal position.
+      Setting to the top , right, bottom and left elements will cause it to be adjusted away from its normal position.</p>
+     <pre>
+      Example
+      .hello {
+      position: relative;
+      left: 20px;
+    }
+    The elements with the hello class  will move towards the left from the original position that you had before the css.
+  </pre>
+    <p>
+     Position fixed , is position relative to the viewport which  means it always stays at the same place even someone scrolled down the page. The top ,right,bottom and left are used to position the element.
+    A fixed element does not leave a gap in the page where it would normally have been located.
+    </p>
+    <p>
+    An element with position absolute is positioned relative to the nearest position ancestor(is similar as the position fixed)
+   However an absolute position element has no positioned ancestors, it moves around with the page and it moves along
+   while scrolling the page.
+    </p>
+    <img src="dogmeme.jpg">
+  </div>
+  
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
