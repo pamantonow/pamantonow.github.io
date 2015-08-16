@@ -1,0 +1,16 @@
+h1 {
+	text-align: center;
+}
+h2{
+	text-align: center;
+	color: grey;
+}
+p, pre {
+	margin-right: auto;
+	margin-left: auto; 
+	width: 90%;
+}
+img{
+	position: relative;
+	left: 40%;
+}
