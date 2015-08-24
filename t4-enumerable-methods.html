@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <title>Enumerable method</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="methods.css">
+</head>
+
+<main>
+  <h1>Enumerable methods</h1>
+  <h2>using map</h2>
+  <h4>August 23rd, 2015</h4>
+
+  <section>
+    <p>
+      The enumerable mixin provides collection classes with several traversal and searching methods,  and with the ability to sort and in this case and enumerable is a module.
+      The class must provide a method each which it blocks successive methods of the collection, must also provide a 
+      meaningful operator.
+      This method is very similar as hashes and arrays but it makes your code prettier and with fewer lines 
+      example:
+      <pre> 
+      class Colors
+    include Enumerable
+
+    def each
+    yield "red"
+      yield "green"
+      yield "blue"
+    end
+  end
+</pre> 
+    </p>
+    <p>
+        There is different types of enumerables but I am going to focus on the enumerable#map, map returns  a new array with the results of running block once for every element. Although #map is almost the same as collect , obviously just named different and it could work for an array and a hash .
+        Let's say that you want to modify you array without altering the original this also when you can just this method.
+        Example</p>
+        <pre>
+          ark2 = ['cat', 'dog', 'pig', 'goat'].map do |animal| 
+         animal.capitalize
+         animal.upcase   
+          end
+         puts ark2.join(", ")   #=>   "CAT, DOG, PIG, GOAT"
+        </pre>
+       <p> In the example above you are creating an array with name of animals inside, then using .map to collect the results
+        for the running block once for every element, then we capitalize it and put everything upcase, by using animal.capitalize and animal upcase don't forget that every time you do a loop you have to close the  loop, last but not least we put the array name using puts follow by the name of the array using .join to put an specific element in between in this case is the " ,".</p>
+
+    <img src="http://assets.diylol.com/hfs/5f1/c9a/ca5/resized/rod-serling-meme-generator-it-makes-perfect-sense-in-the-twilight-zone-495e9a.jpg">
+    
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>

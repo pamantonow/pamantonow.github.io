@@ -1,0 +1,27 @@
+section {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+h1 {
+	text-align: center;
+	
+}
+h2{
+	text-align: center;
+	color: grey;
+
+}
+h4 {
+	text-align: center;
+}
+p{
+	margin-left: auto;
+	margin-right: auto;
+	padding:  0.40em;
+}
+
+img {
+	margin-left: auto;
+	margin-right: auto;
+}
