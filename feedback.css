@@ -1,0 +1,27 @@
+h1 {
+	color: white;
+	text-align: center;
+  font: italic bold Georgia, serif;
+}
+h2 {
+	text-align: center;
+	color: white;
+
+}
+body {
+	background-color: black;
+}
+p{
+color: white;
+margin-right: auto;
+margin-left: auto;
+padding: 2em;
+width: 60%;
+}
+
+img {
+	width: 40%;
+		left: 30%;
+		right: 40%;
+		position: relative;
+}
