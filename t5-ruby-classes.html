@@ -2,23 +2,55 @@
 <head>
   <title>Ruby classes</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+  <link rel="stylesheet" type="text/css" href="rubyclasses.css">
 </head>
 
 <main>
   <h1>Ruby classes</h1>
   <h2>Classes lots of them</h2>
-  <h4>Today's Date</h4>
+  <h4>August 31st , 2015</h4>
 
   <section>
     <p>
-      Your first paragraph goes here. I'm using Web 2.0 Ipsum to add content. Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Nuvvo koofers oooooc voxy klout jaiku palantir flickr insala zinch napster oooj, airbnb mzinga vimeo yuntaa balihoo plickers whrrl edmodo appjet kippt. Yoono imvu hulu eduvant blekko imvu ebay voki napster skype, hipmunk zinch wesabe bubbli ning meebo bitly zlio. Fleck elgg ideeli disqus rovio zillow sifteo blyve jabber, bitly geni zoho foodzie qeyno twones klout jiglu, hipmunk jaiku balihoo plickers heekya eskobo yuntaa. Sococo whrrl plickers movity whrrl zinch voki nuvvo meebo, quora heroku unigo kno wufoo jibjab woopra, groupon yuntaa spock mzinga jumo meebo movity.
+      This week we did more Ruby classes, to be honest I thought it was little harder, and perhaps I went a little overwhelmed trying to figure out how to call the class and creating a new class. I think by breaking it down to pieces and explaining why do you need different method in the class work it will be much more helpful , here I am going to create a class an explain why do you need all those little things in the class.
+      Let's think of a class as blueprint, which this will tell ruby how things have to be structure although without any 
+      details the class won't work. 
     </p>
-    <p>
-        Lijit groupon ning stypi eskobo blyve ning shopify oooooc, meebo groupon prezi ebay voxy bitly diigo. Spock ifttt skype hipmunk movity whrrl bebo oooj empressr, disqus insala palantir bitly dropio zimbra zinch oooooc etsy, klout spock insala quora omgpop trulia jibjab. Sifteo dogster ebay grockit geni scribd bitly ning unigo, plickers voki mzinga tumblr kaboodle mozy whrrl woopra udemy, foodzie joukuu elgg twitter shopify akismet rovio. Kosmix eduvant woopra dopplr balihoo ning bebo akismet, boxbe vimeo kosmix shopify zappos bitly geni loopt, qeyno disqus sococo squidoo wikia octopart.
+        <pre>
+          class Name
+            def initiliaze(first_name,last_name)
+            @first_name = first_name
+            @last_name = last_name
+            end
+          end
+        </pre>
+        <p>
+          In the example above I created a class called Name, just a reminder whenever you create a class the name of your class always has to be the first letter capital.
+          The next line I am defining a method called initialize and as argument , I am passing a first name and a last name , right below them I am creating and instace of the argument and setting equal to the name of it, if your variable doesn't start with the symbol @ this is consider a local variable.
     </p>
+    <pre>
+      class Name
+            def initiliaze(first_name,last_name)
+            @first_name = first_name
+            @last_name = last_name
+            end
+        def first_name
+         print "Lucia"
+        end
+
+         def last_name
+         print "Antonow"
+         end
+        end
+        name = Name.new
+        puts name.first_name
+        puts name.last_name
+    </pre>
     <p>
-        Kazaa meevee eduvant gsnap movity kosmix kazaa klout jumo, trulia unigo groupon wakoopa spock knewton glogster heroku oooj, ning imvu appjet eskobo zillow twitter rovio. Glogster chegg voxy greplin dopplr voki foodzie xobni weebly odeo, sococo zynga knewton loopt palantir lala blyve tumblr blekko, twones akismet plaxo kippt meebo zillow zooomr insala. Oovoo imeem napster divvyshot zinch imeem voxy shopify, fleck kazaa zinch lanyrd boxbe joost wakoopa nuvvo, orkut elgg heekya sifteo scribd napster. Yammer yoono groupon dopplr cloudera nuvvo eduvant klout, voxy groupon disqus eduvant oooj greplin.
+        In the code above I added few methods, one is a methos using the argument inside the initialize which is first_name and the second method is using last_ name, in both of this methods I am just printing my first name.
+        In the next line I  instantiate the class and set it equal to a new class, this by defaul it will make it run, 
+        then to run the other to method I called them by write puts + the name of the class and using .first_name or viceversa is to puts what is inside of that method.
+       
     </p>
 
       <!-- copy and paste as many sections as you want to add paragraphs -->
