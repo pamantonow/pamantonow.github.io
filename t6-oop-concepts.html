@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<head>
+  <title>Variable Scopes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="scopes.css">
+</head>
+
+<main>
+  <h1>Different type of scopes.</h1>
+  <h4>Today's Date</h4>
+
+  <section>
+    <p>
+      During phase 0 week two we learned about classes and different type of methods but my ultimate favorite it's the
+      scopes , and the reason why is because there is five scopes which they all work the same which is are all variables
+      but they are used in different type of methods.
+      Scopes define where in a program a variable is accessible .
+      The five scopes are : Global scope, Local variables, instance variable,  constance and class variables.
+
+    </p>
+    <p>
+      The global scope are accessible from anywhere in Ruby , it doesn't matter where they are declared , however you have
+      to be smart while using because they are dangerous they can be written to from anywhere , it could make it hard to debugg the a program but whenever is necessary to use a global scope 
+      <pre> $number = 5</pre>
+      This will print out 5 , since we are setting a variable to 5. 
+    </p>
+    <p>
+      We also have the local variables which this ones don't need any symbol although you can't set a an integer to a variable only a string it could have an underscore , but never ever a number.
+      Also if you want to define a variable for a loop you must do it inside the loop otherwise it won't run.
+      <pre>
+        number = 5
+      </pre>
+    </p>
+    Instance variables are use in a class this very similar as the class variables except that their values are local
+    to specific instance of an object.
+    For example if a class contains an instance variable called @answer, if one instance of the object changes the current value of @answer the change is local to only the object that made the change. Other objects of the same class have their own local copies of the variable which are independent of changes made in any other objects.
+    <pre>
+      class Questions
+
+       def initialize(answer)
+       @answer= answer
+       end
+     end
+    </pre>
+    <p>I am creating a class called questions, and defining a method called initialize and passing and argument then below that I am creating the instace of  a variable by putting the @symbol.
+    </p>
+    <p>
+      Class variables are very much like instance variables but this is shared among this variables, this means that only one variable value exists for all objects instantiated from this class.
+      This being said that if one object instance changes the value of the variable, that new value will essentially change for all other object instances.
+      Class variables are declared by using @@ symbol.
+      <pre>
+    class Planet
+    @@planets_count = 0
+    
+    def initialize(name)
+     @name = name
+     @@planets_count += 1
+     end
+   </pre>
+    </p>
+    <p>
+      Ruby constants are values which once assigned a value you can not  changed. I say should because Ruby differs from most programming languages in that it allows a constant value to be changed after it has been declared,
+      Constants declared within a class or module are available anywhere within the context of that class or module. 
+    </p>
+
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
