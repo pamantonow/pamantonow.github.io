@@ -3,6 +3,15 @@
 <head>
 <title>Pamela Antonow</title> 
 <link rel="stylesheet" type="text/css" href="index.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+
 </head>
 
 
@@ -11,29 +20,48 @@
 <h1>Pamela Antonow</h1>
 <h2>This is just a litte bit of my world</h2>
 </header>
-<nav>
-<ul>
-<li><a href="about.html">About me</a></li>
-<li><a href="t1-git-blog.html">Git Blog</a></li>
-<li><a href="c1-chefs-kitchen.html">Chef's in the kitchen</a></li>
-<li><a href="t2-css-design.html">Position property css</a></li>
-<li><a href="t3-arrays-hashes.html">Array and hashes</a></li>
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="t1-git-blog.html">Git Blog</a></li>
+  <li><a href="t2-css-design.html">Position property css</a></li>
+  <li><a href="t3-arrays-hashes.html">Array and hashes</a></li>
+  <li><a href="t4-enumerable-methods.html">Enumerable methods</a></li>
+<li><a href="t5-ruby-classes.html">Ruby classes</a></li>
+<li><a href="t6-oop-concepts.html">Variable Scopes</a></li>
+
+</ul>
+<ul id="dropdown2" class="dropdown-content">
+	<li><a href="c1-chefs-kitchen.html">Chef's in the kitchen</a></li>
 <li><a href="c3-thinking-style.html">Thinking style</a></li>
 <li><a href="c4-tech-issues.html">Tech Issues</a></li>
-<li><a href="t4-enumerable-methods.html">Enumerable methods</a></li>
 <li><a href="c5-feedback.html">Feedback</a></li>
-<li><a href="t5-ruby-classes.html">Ruby classes</a></li>
 <li><a href="c6-stereotype-threat.html">Stereotypes in Tech</a></li>
-<li><a href="resume.html">Resume</a></li>
-<li><a href="t6-oop-concepts.html">Variable Scopes</a></li>
-<!-- <li>Inspirations</li> -->
-<!-- <li>Why Programming?</li> -->
+
+
+
 
 
 </ul>
-<img id="main" src= "http://favim.com/orig/201108/30/building-city-lights-new-york-night-Favim.com-133893.jpg">
+<nav>
+  <div class="nav-wrapper blue-grey darken-4">
+  	<div class="container">
+    <ul class=" center hide-on-med-and-down">
+      <li><a href="about.html">About me</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Technical Blog Posts<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Cultural Blog Posts<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+
+</ul>
+ </div>
 
 </nav>
+<img id="main" src= "http://favim.com/orig/201108/30/building-city-lights-new-york-night-Favim.com-133893.jpg">
+
 <h3>Contact me</h3>
 <a href ="https://www.facebook.com/pamela.guerrero.12"><img src="images/facebook.png"></a>
 <a href ="https://twitter.com/PamelaAntonow"><img src="images/twitter.png"></a>
