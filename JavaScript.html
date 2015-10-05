@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <title>Javascript</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="javascript.css">
+</head>
+
+<main>
+  <h1>Looping</h1>
+  <h2>Loops Ruby vs looping Javascript</h2>
+  <h4>Oct 2nd 2015</h4>
+
+  <section>
+    <p>
+    This our week 7 and Dev Bootcamp and we just started with Javascript after we did three weeks of Ruby , we learned a lot of methods but the most efficient one was learning how to loop on an array or a hash which you can do the same thing in Javascript to loop through an array or an object. I am going to explain how to loop with Javascript and Ruby since both of this languages are similar but have their different ways to loop.
+    Although after being used to doing Ruby and using different loops there , Javascript was a little bit more confusing  and the syntax it's different but it's always good to learn different languages (to be honest I like Ruby a little bit more).
+
+    </p>
+    <p>
+    Ruby has different loops you got :each,for,while,until and many more .. , the most common ones are using .each
+    here is an example.Also in this example it's something that I used for one of my challenges and what this little piece of code its doing is defining a method and setting an array = to a number.to_s and splitting ,
+    in this specific challenge we wanted to return a number a string of a comma every third digit, counting reverse, that is why I am using .each_with index to iterate over the index of the array and check if the index remainder 3 it's equal to zero.
+        <pre> 
+          def separate_comma(number) 
+          array = number.to_s.reverse.split("")
+            array.each_with_index do |num,index|
+              if index % 3 == 0
+              array[index] = "," + num
+              end
+            end
+          end
+        </pre>
+    </p>
+    <p>
+    I am using the same method that I did for Ruby but in Javascript and let's break it down first you create function
+    with a function name and an argument you have curly brackets to start and the method(that is how Javascript works)
+    when you are creating a variable don't forget to write var infront of it otherwise you will get an undefined method. Using for I am checking if the var index (index of an array) it's equal to 0 , then index less than the array length , increment the index.
+    It works the same as the .each method Ruby but using for.
+        <pre>
+          function seperateComma(number) {
+          var array = number.toString().split('').reverse();
+           for (var index = 0; index < array.length; index += 1) {
+            if (index % 3 == 0){
+              array[index] += ","
+            }
+           }
+         </pre>
+     <p>
+     </p>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+  <img src="http://www.memebucket.com/mb/2012/09/Javascript-535.png">
+</main>
