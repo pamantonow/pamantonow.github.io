@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+  <title>cheat-sheet</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="enu.css">
+</head>
+
+<main>
+  <h1>Ruby enumerables</h1>
+  <h2>the enumerables that will make your life easier!</h2>
+
+
+  <section>
+    <div class ="masonry">
+   <div class ="method">
+    <p>
+      <h4>Each_with_index</h4>
+      We all know about the enumerable .each, each with index it's very similar it iterates over an array but to be more specific throught the index although when you passed it always has to have two arguments , otherwise loses the point of iteraring over the index .
+      Example:
+      <pre> 
+       def separate_comma(number) 
+        array = number.to_s.reverse.split("")
+        array.each_with_index do |num,index|
+          if index % 3 == 0
+          array[index] = "," + num
+          end
+        end
+      end
+      </pre>
+    </p>
+  </div>
+
+    <div class = "method">
+    <p>
+      <h4>Sort_by</h4>
+      Really similar as sort but sort_by will only take one argument and it can only be used with a block while sort can be used with or without a block.
+      <pre>
+        aray = ["ana","pedro","juan"]
+        array.sort_by { |word| word.length}
+
+        #=> ["ana","juan","pedro"]
+      </pre>
+    </p>
+  </div>
+    <div class ="method">
+    <p>
+
+     <h4> .include</h4>
+     It will return true if the given object is present in self.( if element == object),it also makes a statement simply makes a reference to a module.
+      <pre>
+        array = ["a","b","c",d]
+        array.include?("a") #=> true
+        array.inclide?("g")  #=> false
+      </pre>
+    </p>
+  </div>
+    <div class ="method">
+    <p>
+     <h4> Collect</h4>
+      Returns a new array with the results of running block once for every element in enum. In other words it selects and modify an item. Collect will run your block and give you an object filled with whatever your block returned each time.
+      <pre>
+        array = [2,3,4,5,6]
+        array.collect {|num| num * 2}
+
+        #=> [4,6,8,10,12]
+      </pre>
+    </p>
+    
+    </div>
+  </div>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+<footer>
+  <h4>More enumerables</h4>
+    <p> Here is just the most practical enumerables and the ones that you probably will use more often but for more enumberables <a href ="http://ruby-doc.org/core-2.2.3/Enumerable.html">Ruby Enumerables</a>
+  </p>
+</footer>
+</main>
